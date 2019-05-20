@@ -1,0 +1,67 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Activity themes -->
+    <style name="Theme.Base" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="Theme.Base2" parent="Theme.AppCompat">
+    </style>
+
+    <style name="Theme.Sample" parent="Theme.Base" />
+
+    <style name="AppTheme" parent="Theme.Sample" >
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- Widget styling -->
+    <style name="style_dash_fragment">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginTop">@dimen/srl_padding</item>
+        <item name="android:elevation">@dimen/frag_elevation</item>
+        <item name="android:background">@color/colorFrag</item>
+    </style>
+    <style name="style_device_name">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+
+    <style name="Widget" />
+
+    <style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="Widget.SampleMessageTile">
+        <item name="android:background">@drawable/tile</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowDy">-3.5</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

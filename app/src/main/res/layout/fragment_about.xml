@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginTop="@dimen/srl_padding"
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintGuide_percent="0.3" />
+        <TextView
+            android:id="@+id/device_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_device"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/device_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/devid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_devid"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/device_label" />
+
+        <TextView
+            android:id="@+id/devid_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/device_value" />
+
+        <TextView
+            android:id="@+id/serial_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_devserial"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/devid_label" />
+        <TextView
+            android:id="@+id/devserial_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:maxLines="2"
+            android:minLines="2"
+            android:lines="2"
+            android:inputType="textMultiLine"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/devid_value" />
+
+        <TextView
+            android:id="@+id/type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_typeversion"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/devserial_value" />
+        <TextView
+            android:id="@+id/type_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/devserial_value" />
+
+        <TextView
+            android:id="@+id/hw_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_hwversion"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/type_label" />
+        <TextView
+            android:id="@+id/hw_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/type_value" />
+
+        <TextView
+            android:id="@+id/fw_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_fwversion"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/hw_label" />
+
+        <TextView
+            android:id="@+id/fw_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/hw_value" />
+
+
+        <TextView
+            android:id="@+id/flx_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_flxversion"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fw_label" />
+
+        <TextView
+            android:id="@+id/flx_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fw_value" />
+
+        <TextView
+            android:id="@+id/rdate_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_rdate"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/flx_label" />
+
+        <TextView
+            android:id="@+id/rdate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/flx_value" />
+
+        <TextView
+            android:id="@+id/boot_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/label_about_boot"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/rdate_label" />
+
+        <TextView
+            android:id="@+id/boot_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            android:layout_marginBottom="@dimen/normal_padding"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/boot_label" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

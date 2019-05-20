@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BT GPS Tracker Setup</string>
+    <string name="company_name">(c) Horns and Hooves LTD</string>
+    <string name="release_date">20190215</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="sample_show_log">Log</string>
+    <string name="menu_color_scheme">Color scheme</string>
+    <string name="menu_color_scheme_1">Scheme #1</string>
+    <string name="menu_color_scheme_2">Scheme #2</string>
+    <string name="menu_color_scheme_3">Scheme #3</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_save_full">Send to device</string>
+
+    <string name="start_searching">Start searching</string>
+
+    <string name="looking_ble">Looking for BT and BLE devices...</string>
+    <string name="list_prompt">List of BT GPS trackers in range:</string>
+    <string name="not_found">Devices not found</string>
+    <string name="enable_bt">Please enable BT on your device</string>
+
+    <string name="section_dash">Dashboard</string>
+    <string name="section_config">Settings</string>
+    <string name="section_about">About</string>
+
+    <string name="label_about_device">Device name</string>
+    <string name="label_about_devid">Device ID</string>
+    <string name="label_about_devserial">Serial #</string>
+
+    <string name="label_about_typeversion">HW type</string>
+    <string name="label_about_hwversion">HW version</string>
+    <string name="label_about_fwversion">FW version</string>
+    <string name="label_about_flxversion">Flex version</string>
+    <string name="label_about_rdate">Release date</string>
+    <string name="label_about_boot">Bootloader</string>
+
+    <string name="label_dash_server">Server</string>
+    <string name="label_dash_ipaddr">IP address</string>
+    <string name="label_dash_ipaddr_mask">192.168.010.001</string>
+    <string name="label_dash_port">Port</string>
+    <string name="label_dash_login">Login</string>
+    <string name="label_dash_imei">IMEI</string>
+    <string name="label_dash_pass">Password</string>
+    <string name="label_dash_apn">GPRS Access Point</string>
+    <string name="label_dash_apn_name">APN name</string>
+
+    <string name="label_dash_gsm">GSM</string>
+    <string name="label_dash_sms">SMS</string>
+</resources>
